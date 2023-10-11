@@ -1,21 +1,25 @@
 # SwiftUINavigatorTests
 > Use SwiftUI View with UIKit Project easily.
 
-## Example
+## ✔️ Example
 
+### UIKit side
 ```swift
 func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+
     guard let scene = (scene as? UIWindowScene) else { return }
     window = UIWindow(frame: scene.coordinateSpace.bounds)
     window?.windowScene = scene
     
     let controller = RootView().asViewController()
-    let nController = UINavigationController(rootViewController: controller)
-    window?.rootViewController = nController
+    let navigationController = UINavigationController(rootViewController: controller)
+    
+    window?.rootViewController = navigationController
     window?.makeKeyAndVisible()
 }
 ```
 
+### SwiftUI side
 ```swift
 struct RootView: Wrappable {
     
