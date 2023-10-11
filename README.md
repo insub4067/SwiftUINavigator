@@ -6,7 +6,7 @@
 
 > Use SwiftUI View with UIKit Project easily.
 
-##### 🤔 Why do we need SwiftUINavigator when we have a UIHostingController?
+#### 🤔 Why do we need SwiftUINavigator when we have a UIHostingController?
 > I found bugs that were hard to predict for some models and ios versions. So I made SwiftUINavigator to solve those problem.
 
 ## ✔️ Example
