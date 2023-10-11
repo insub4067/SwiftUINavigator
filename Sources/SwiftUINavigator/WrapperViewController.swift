@@ -5,6 +5,7 @@
 //  Created by 김인섭 on 10/12/23.
 //
 
+#if canImport(SwiftUI)
 import SwiftUI
 
 public class WrapperViewController<Content: Wrappable>: UIViewController {
@@ -47,3 +48,4 @@ extension WrapperViewController {
         addChildAndSubView(hController)
     }
 }
+#endif

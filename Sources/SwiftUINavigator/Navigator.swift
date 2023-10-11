@@ -5,6 +5,7 @@
 //  Created by 김인섭 on 10/12/23.
 //
 
+#if canImport(UIKit)
 import UIKit
 
 public class Navigator {
@@ -58,3 +59,4 @@ public class Navigator {
         navigationController?.topViewController?.removeFromParentAndSuperView()
     }
 }
+#endif

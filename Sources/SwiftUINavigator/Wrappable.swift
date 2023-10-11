@@ -5,6 +5,7 @@
 //  Created by 김인섭 on 10/12/23.
 //
 
+#if canImport(SwiftUI)
 import SwiftUI
 
 public protocol Wrappable: View {
@@ -26,3 +27,4 @@ public extension Wrappable {
         )
     }
 }
+#endif

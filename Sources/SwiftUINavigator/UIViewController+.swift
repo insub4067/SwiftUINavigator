@@ -5,6 +5,7 @@
 //  Created by 김인섭 on 10/12/23.
 //
 
+#if canImport(UIKit)
 import UIKit
 
 public extension UIViewController {
@@ -22,3 +23,4 @@ public extension UIViewController {
         self.removeFromParent()
     }
 }
+#endif
