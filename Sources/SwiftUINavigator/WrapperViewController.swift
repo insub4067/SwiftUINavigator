@@ -16,6 +16,7 @@ public class WrapperViewController<Content: Wrappable>: UIViewController {
 
     init(
         content: Content,
+        indentifier: String,
         backgroundColor: UIColor? = nil,
         hidesBottomBarWhenPushed: Bool = true
     ) {
@@ -24,6 +25,7 @@ public class WrapperViewController<Content: Wrappable>: UIViewController {
         self.content.navigator = self.navigator
         super.init(nibName: nil, bundle: nil)
         
+        self.identifier = indentifier
         self.view.backgroundColor = backgroundColor ?? .systemBackground
         self.hidesBottomBarWhenPushed = hidesBottomBarWhenPushed
         
@@ -36,7 +38,7 @@ public class WrapperViewController<Content: Wrappable>: UIViewController {
     
     public override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        self.navigator.set(self.navigationController)
+        self.navigator.set(self)
     }
 }
 

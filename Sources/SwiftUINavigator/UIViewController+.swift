@@ -10,6 +10,19 @@ import UIKit
 
 public extension UIViewController {
     
+    private struct AssociatedKeys {
+        static var identifier = "Identifier"
+    }
+
+    var identifier: String? {
+        get {
+            objc_getAssociatedObject(self, &AssociatedKeys.identifier) as? String
+        }
+        set {
+            objc_setAssociatedObject(self, &AssociatedKeys.identifier, newValue, .OBJC_ASSOCIATION_RETAIN)
+        }
+    }
+    
     func addChildAndSubView(_ controller: UIViewController) {
         self.addChild(controller)
         controller.view.frame = self.view.frame

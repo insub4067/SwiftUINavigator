@@ -17,13 +17,14 @@ public extension Wrappable {
     
     func asViewController(
         backgroundColor: UIColor? = nil,
-        hideBottomBar: Bool = true
+        hidesBottomBarWhenPushed: Bool = true
     ) -> WrapperViewController<Self> {
         
         .init(
-            content: self,
+            content: self, 
+            indentifier: "\(Self.self)",
             backgroundColor: backgroundColor,
-            hideBottomBar: hideBottomBar
+            hidesBottomBarWhenPushed: hidesBottomBarWhenPushed
         )
     }
 }
