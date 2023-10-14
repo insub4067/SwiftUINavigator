@@ -15,6 +15,8 @@ public protocol Wrappable: View {
 
 public extension Wrappable {
     
+    var identifier: String { "\(Self.self)" }
+    
     func asViewController(
         backgroundColor: UIColor? = nil,
         hidesBottomBarWhenPushed: Bool = true
@@ -22,7 +24,7 @@ public extension Wrappable {
         
         .init(
             content: self, 
-            indentifier: "\(Self.self)",
+            indentifier: identifier,
             backgroundColor: backgroundColor,
             hidesBottomBarWhenPushed: hidesBottomBarWhenPushed
         )

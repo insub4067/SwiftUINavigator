@@ -11,7 +11,8 @@ import UIKit
 public class Navigator {
     
     public weak var viewController: UIViewController?
-    var navigationController: UINavigationController? {
+    
+    private var navigationController: UINavigationController? {
         viewController?.navigationController
     }
     
