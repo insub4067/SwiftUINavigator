@@ -9,7 +9,16 @@
 #### 🤔 Why do you need SwiftUINavigator when you have a UIHostingController?
 > With UIHostingController, I faced bugs that were hard to predict and could not be resolved. That's why I made SwiftUINavigator to solve those problems.
 
-## ✔️ Example
+## ✔️ Simple Example
+```swift
+SwiftUIView() // return View
+    .asViewController() // return WrapperViewController
+    .title("SwiftUIView") // return UIViewController
+    .backgroundColor(.gray) // return UIViewController
+    .hidesBottomBarWhenPushed(true) // return UIViewController
+```
+
+## ✔️ Project Example
 
 ### UIKit side
 ```swift

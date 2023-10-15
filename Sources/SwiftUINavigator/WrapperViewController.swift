@@ -17,8 +17,7 @@ public class WrapperViewController<Content: Wrappable>: UIViewController {
     init(
         content: Content,
         indentifier: String,
-        backgroundColor: UIColor? = nil,
-        hidesBottomBarWhenPushed: Bool = true
+        backgroundColor: UIColor? = nil
     ) {
         self.navigator = Navigator()
         self.content = content
@@ -27,7 +26,6 @@ public class WrapperViewController<Content: Wrappable>: UIViewController {
         
         self.identifier = indentifier
         self.view.backgroundColor = backgroundColor ?? .systemBackground
-        self.hidesBottomBarWhenPushed = hidesBottomBarWhenPushed
         
         setHController()
     }
