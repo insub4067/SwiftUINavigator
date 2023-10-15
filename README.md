@@ -15,11 +15,14 @@
 
 ## ✔️ Simple Example
 ```swift
-let viewController = SwiftUIView() // View
+let viewController = HomeView() // View
     .asViewController() // WrapperViewController
     .title("SwiftUIView") // UIViewController
     .backgroundColor(.gray) // UIViewController
     .hidesBottomBarWhenPushed(true) // UIViewController
+    
+weak var navigator: Navigator?
+navigator.pop(to: "HomeView")
 ```
 
 ## ✔️ Project Example
