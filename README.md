@@ -21,10 +21,23 @@ let viewController = HomeView() // View
     .backgroundColor(.gray) // UIViewController
     .hidesBottomBarWhenPushed(true) // UIViewController
 ```
-
+```swift 
+weak var navigator: Navigator?
+let controller = DestinationView().asViewController()
+navigator.push(controller)
+```
+```swift 
+weak var navigator: Navigator?
+let controller = DestinationView().asViewController()
+navigator?.present(controller, .popover)
+```
 ```swift 
 weak var navigator: Navigator?
 navigator.pop(to: "HomeView")
+```
+```swift 
+weak var navigator: Navigator?
+navigator.dismiss()
 ```
 
 ## ✔️ Project Example
