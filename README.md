@@ -4,10 +4,13 @@
 ![Static Badge](https://img.shields.io/badge/iOS-v13-blue)
 ![Static Badge](https://img.shields.io/badge/Swift-5.4-orange)
 
-**Use SwiftUI View with UIKit Project easily.**
+> Use SwiftUI View with UIKit Project easily.
 
-#### 🤔 Why do you need SwiftUINavigator when you have a UIHostingController?
+## 🤔 Why do you need SwiftUINavigator when you have a UIHostingController?
 > With UIHostingController, I faced bugs that were hard to predict and could not be resolved. That's why I made SwiftUINavigator to solve those problems.
+
+## ⚒️ How it works
+<img width="650" alt="스크린샷 2023-10-15 오후 2 06 44" src="https://github.com/insub4067/SwiftUINavigator/assets/85481204/0193a95a-bdbd-4df8-ad4d-fedec2ef0b4d">
 
 ## ✔️ Simple Example
 ```swift
