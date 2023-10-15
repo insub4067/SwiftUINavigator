@@ -14,11 +14,11 @@
 
 ## ✔️ Simple Example
 ```swift
-SwiftUIView() // return View
-    .asViewController() // return WrapperViewController
-    .title("SwiftUIView") // return UIViewController
-    .backgroundColor(.gray) // return UIViewController
-    .hidesBottomBarWhenPushed(true) // return UIViewController
+let viewController = SwiftUIView() // View
+    .asViewController() // WrapperViewController
+    .title("SwiftUIView") // UIViewController
+    .backgroundColor(.gray) // UIViewController
+    .hidesBottomBarWhenPushed(true) // UIViewController
 ```
 
 ## ✔️ Project Example
