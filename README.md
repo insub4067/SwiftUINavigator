@@ -13,7 +13,7 @@
 <img width="650" alt="스크린샷 2023-10-15 오후 2 20 50" src="https://github.com/insub4067/SwiftUINavigator/assets/85481204/ddfa6af3-9dcc-4295-8715-8ce26aa06565">
 
 
-## ✔️ Simple Example
+## ✔️ Simple Examples
 ```swift
 let viewController = HomeView() // View
     .asViewController() // WrapperViewController
@@ -37,11 +37,14 @@ navigator.pop(to: "HomeView")
 ```
 ```swift 
 weak var navigator: Navigator?
+navigator.pop()
+```
+```swift 
+weak var navigator: Navigator?
 navigator.dismiss()
 ```
 
 ## ✔️ Project Example
-
 ### UIKit side
 ```swift
 func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
