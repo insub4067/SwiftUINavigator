@@ -21,12 +21,10 @@ public extension Wrappable {
         backgroundColor: UIColor? = nil,
         hidesBottomBarWhenPushed: Bool = true
     ) -> WrapperViewController<Self> {
-        
-        .init(
+        WrapperViewController(
             content: self, 
             indentifier: identifier,
-            backgroundColor: backgroundColor,
-            hidesBottomBarWhenPushed: hidesBottomBarWhenPushed
+            backgroundColor: backgroundColor
         )
     }
 }
