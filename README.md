@@ -10,7 +10,8 @@
 > With UIHostingController, I faced bugs that were hard to predict and could not be resolved. That's why I made SwiftUINavigator to solve those problems.
 
 ## ⚒️ How it works
-<img width="650" alt="스크린샷 2023-10-15 오후 2 06 44" src="https://github.com/insub4067/SwiftUINavigator/assets/85481204/0193a95a-bdbd-4df8-ad4d-fedec2ef0b4d">
+<img width="650" alt="스크린샷 2023-10-15 오후 2 20 50" src="https://github.com/insub4067/SwiftUINavigator/assets/85481204/ddfa6af3-9dcc-4295-8715-8ce26aa06565">
+
 
 ## ✔️ Simple Example
 ```swift
