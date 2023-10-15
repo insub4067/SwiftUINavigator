@@ -20,7 +20,9 @@ let viewController = HomeView() // View
     .title("SwiftUIView") // UIViewController
     .backgroundColor(.gray) // UIViewController
     .hidesBottomBarWhenPushed(true) // UIViewController
-    
+```
+
+```swift 
 weak var navigator: Navigator?
 navigator.pop(to: "HomeView")
 ```
