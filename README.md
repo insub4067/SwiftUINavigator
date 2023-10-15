@@ -17,7 +17,7 @@
 ```swift
 let viewController = HomeView() // View
     .asViewController() // WrapperViewController
-    .title("SwiftUIView") // UIViewController
+    .title("HomeView") // UIViewController
     .backgroundColor(.gray) // UIViewController
     .hidesBottomBarWhenPushed(true) // UIViewController
 ```
